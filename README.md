@@ -1,7 +1,20 @@
-# shodan-subdomain-query-nslookup
-Query shodan to list subdomains of a domain and get the ip and cname running nslookup for each subdomain
+# Subdomain Enumeration and NSLookup
 
-## Usage:
+This Python script performs subdomain enumeration for a given domain using Shodan.io and performs an NSLookup for each subdomain. The results are stored in a CSV file.
 
-`python3 subdomain-nslookup.py example.com`
+## Prerequisites
+
+- Python 3.6 or higher
+- Required Python packages: `requests`, `beautifulsoup4`, `concurrent.futures`
+
+
+1. Install the required Python packages:
+
+   ```shell
+   pip install requests beautifulsoup4
+   
+2. Usage
+
+   ```shell
+   python3 subdomain_enumeration.py example.com
 
